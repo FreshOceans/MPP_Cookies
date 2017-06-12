@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <!-- ======= ======= ======= head ======= ======= ======= -->
+	<head>
+	    <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>MPP_Cookies</title>
+
+        <!-- === styles === -->
+	    <link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+    <!-- ======= ======= ======= body ======= ======= ======= -->
+	<body>
+		<header>Cookies Project</header>
+
+		<!-- ======== User Login/Logout ========= -->
+		<div id="accountLog">
+			<input type="text" id="username" name="username" value="mperez">
+			<input type="text" id="password" name="password" value="NYCDA2017">
+			<!-- <input type="button" id="clearForm" name="clear" value="Clear"> -->
+			<input type="button" id="login" name="login" value="Login">
+			<input type="button" id="logout" name="logout" value="Logout">
+		</div>
+
+		<!-- ======== Order Information ======== -->
+		<div id="orderInvoice">
+			<div id="pastryType" class="pastryTypes">
+				<div id="brownies">
+					<p>Fudge Brownie</p>
+				</div>
+				<div id="cookies">
+					<p>Chocolate Chip Cookies</p>
+				</div>
+				<div id="cupcakes">
+					<p>Vanille Cupcakes</p>
+				</div>
+			</div>
+
+			<!-- ======= Each Pastry Current Order Quantity ======= -->
+			<div id="orderQuantity" class="Order">
+				<input type="text" id="browniesQuantity" placeholder="0" class="currentOrder">
+				<br>
+				<input type="text" id="cookiesQuantity" placeholder="0" class="currentOrder">
+				<br>
+				<input type="text" id="cupcakesQuantity" placeholder="0" class="currentOrder">
+			</div>
+
+			<!-- ======= Each Pastry Total Order History ======= -->
+			<div id="totalOrderHistory" class="totalHistory">
+				<div id="browniesHistory" class="totals"></div>
+				<br>
+				<div id="cookiesHistory" class="totals"></div>
+				<br>
+				<div id="cupcakesHistory" class="totals"></div>
+			</div>
+		</div>
+
+		<!-- ========= Place Order ========== -->
+		<div id="totalPastryOrder">
+			<div id="totalItems"></div>
+			<input type="button" name="placeOrder" value="Place Order">
+		</div>
+
+
+
+
+
+
+
+
+
+		<!-- == scripts == -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="cookies.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+</html>
