@@ -3,14 +3,15 @@
 	height: auto;
 }
 
-.pastryTypes {
-	float: left;
-}
-
-.Order {
+/*======== Current Order =======*/
+#orderQuantity {
 	/*float: left;*/
+	position: absolute;
+	left: 200px;
+	top: 50px;
+	height: 100px;
+	width: 50px;
 }
-
 .currentOrder {
 	height: 25px;
 	width: 25px;
@@ -18,18 +19,25 @@
 	border-color: black;
 	border-width: thin;
 	margin: 5px;
+	text-align: center;
 }
 
+/*======= Order Item Totals ========*/
+#totalOrderHistory {
+	/*float: left;*/
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	height: 100px;
+	width: 50px;
+
+}
 .totals {
 	height: 25px;
 	width: 25px;
 	border: dotted;
 	border-width: thin;
 	border-color: black;
-}
-
-#totalOrderHistory {
-	height: auto;
-	width: 50px;
-	margin: 0;
+	color: black;
+	text-align: center;
 }

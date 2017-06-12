@@ -22,10 +22,12 @@
 			<!-- <input type="button" id="clearForm" name="clear" value="Clear"> -->
 			<input type="button" id="login" name="login" value="Login">
 			<input type="button" id="logout" name="logout" value="Logout">
+			<input type="button" id="clearCookies" name="clearCookies" value="Clear Cookies">
 		</div>
 
 		<!-- ======== Order Information ======== -->
 		<div id="orderInvoice">
+
 			<div id="pastryType" class="pastryTypes">
 				<div id="brownies">
 					<p>Fudge Brownie</p>
@@ -39,28 +41,29 @@
 			</div>
 
 			<!-- ======= Each Pastry Current Order Quantity ======= -->
-			<div id="orderQuantity" class="Order">
-				<input type="text" id="browniesQuantity" placeholder="0" class="currentOrder">
+			<div id="orderQuantity">
+				<input type="number" id="browniesQuantity" placeholder="0" class="currentOrder">
 				<br>
-				<input type="text" id="cookiesQuantity" placeholder="0" class="currentOrder">
+				<input type="number" id="cookiesQuantity" placeholder="0" class="currentOrder">
 				<br>
-				<input type="text" id="cupcakesQuantity" placeholder="0" class="currentOrder">
+				<input type="number" id="cupcakesQuantity" placeholder="0" class="currentOrder">
 			</div>
 
 			<!-- ======= Each Pastry Total Order History ======= -->
-			<div id="totalOrderHistory" class="totalHistory">
+			<div id="totalOrderHistory">
 				<div id="browniesHistory" class="totals"></div>
 				<br>
 				<div id="cookiesHistory" class="totals"></div>
 				<br>
 				<div id="cupcakesHistory" class="totals"></div>
 			</div>
+
 		</div>
 
 		<!-- ========= Place Order ========== -->
 		<div id="totalPastryOrder">
 			<div id="totalItems"></div>
-			<input type="button" name="placeOrder" value="Place Order">
+			<input type="button" id="placeOrder" name="placeOrder" value="Place Order">
 		</div>
 
 
